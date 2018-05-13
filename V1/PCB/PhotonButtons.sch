@@ -9104,8 +9104,8 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
 <part name="U$1" library="Tinamous" deviceset="PHOTON_SMD" device=""/>
 <part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100k"/>
-<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100k"/>
+<part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100k"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M03" device="POLAR" value="Left LED Button"/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="POLAR" value="Right LED Button"/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH" value="Left Button"/>
@@ -9119,8 +9119,12 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="L"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M02" device="-JST-2MM-SMT"/>
-<part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-BAT20J" value="BAT20J"/>
-<part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-BAT20J" value="BAT20J"/>
+<part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-BAT20J" value="1SS355TE-17">
+<attribute name="FARNELL" value="152-5435"/>
+</part>
+<part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-BAT20J" value="1SS355TE-17">
+<attribute name="FARNELL" value="152-5435"/>
+</part>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100k"/>
@@ -9134,7 +9138,9 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
-<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW"/>
+<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW">
+<attribute name="FARNELL" value="189-4713"/>
+</part>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="1M"/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
@@ -9147,7 +9153,7 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="L"/>
 <part name="H3" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
-<part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100k"/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
 </parts>
 <sheets>
@@ -9176,8 +9182,12 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <instance part="SUPPLY6" gate="G$1" x="81.28" y="170.18"/>
 <instance part="LOGO1" gate="G$1" x="132.08" y="10.16"/>
 <instance part="JP3" gate="G$1" x="218.44" y="63.5" rot="R180"/>
-<instance part="D1" gate="G$1" x="63.5" y="127" rot="R90"/>
-<instance part="D2" gate="G$1" x="53.34" y="127" rot="R90"/>
+<instance part="D1" gate="G$1" x="63.5" y="127" rot="R90">
+<attribute name="FARNELL" x="63.5" y="127" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="D2" gate="G$1" x="53.34" y="127" rot="R90">
+<attribute name="FARNELL" x="53.34" y="127" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="GND2" gate="G$1" x="10.16" y="76.2"/>
 <instance part="GND3" gate="G$1" x="7.62" y="20.32"/>
 <instance part="R1" gate="G$1" x="180.34" y="81.28" rot="R90"/>
@@ -9191,7 +9201,9 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <instance part="C1" gate="G$1" x="25.4" y="20.32"/>
 <instance part="SUPPLY12" gate="G$1" x="25.4" y="27.94"/>
 <instance part="GND10" gate="G$1" x="25.4" y="12.7"/>
-<instance part="Q1" gate="G$1" x="180.34" y="53.34"/>
+<instance part="Q1" gate="G$1" x="180.34" y="53.34">
+<attribute name="FARNELL" x="180.34" y="53.34" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND4" gate="G$1" x="180.34" y="43.18"/>
 <instance part="R2" gate="G$1" x="165.1" y="45.72" rot="R90"/>
 <instance part="GND11" gate="G$1" x="165.1" y="38.1"/>
